@@ -1,0 +1,81 @@
+body {
+	background: #ddd;
+	font-family: verdana, helvetica, sans-serif;
+}
+
+div#contenedor {
+	background: white;
+	width: 90%;
+	margin: auto;
+	padding: 1%;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+div#parametros,
+div#presupuesto {
+	width: 47%;
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid #ddd;
+	padding: 1%;
+	border-radius: 5px;
+}
+
+h2 {
+	margin: 0 0 1em;
+}
+
+label {
+	font-size: 14px;
+}
+
+label small {
+	font-size: 10px;
+	color: #777;
+}
+
+input[type=number],
+input[type=date],
+select {
+	font: normal 14px/14px verdana, helvetica, sans-serif;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #aaa;
+}
+
+input[type=submit] {
+	font: bold 14px/14px verdana, helvetica, sans-serif;
+	padding: 10px;
+	color: white;
+	border: 0;
+	background: #43A047;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background: #1B5E20;
+}
+
+table {
+	width: 90%;
+	margin: 15px;
+	border-collapse: collapse;
+}
+
+table td {
+	border-bottom: 1px solid #aaa;
+	padding: 5px;
+}
+
+table tr:nth-child(even) {
+	background: #eee;
+}
