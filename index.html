@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculadora de Presupuesto</title>
+
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+
+		<!-- Incluir archivos javascript debajo -->
+
+
+
+	</head>
+
+	<body>
+		<div id="contenedor">
+			<h1><img src="logo.png"> Calculadora de Presupuesto</h1>
+			<p>Calculadora de presupuesto para 
+			desarrolladores freelance</p>
+
+			<form>
+				<div id="parametros">
+					<h2>Personaliza los parámetros</h2>	
+
+					<label>Páginas <small>Selecciona la cantidad de páginas a realizar</small></label>
+					<div>
+						<input id="paginas_number" type="number" min="1" max="10" required>
+						<input id="paginas_range" type="range" min="1" max="10">
+					</div>
+
+					<label>Temas <small>¿Cuántos temas realizarás?</small></label>
+					<div>
+						<input id="temas_number" type="number" min="1" max="5" required>
+						<input id="temas_range" type="range" min="1" max="5">
+					</div>
+
+					<label>Complejidad <small id="descripcion">Descripción temporal</small></label>
+					<div>
+						<select id="complejidad" required>
+							<option value="">Seleccione una opción</option>
+							<option value="personal">Personal</option>
+							<option value="standard">Standard</option>
+							<option value="avanzado">Avanzado</option>
+							<option value="profesional">Profesional</option>
+							<option value="empresarial">Empresarial</option>
+						</select>
+					</div>
+
+					<label>Social <small>Incrementa la interacción de tus visitantes con contenido social dinámico</small></label>
+					<div>
+						<label>Facebook	<input class="social" type="checkbox" value="facebook"></label>
+						<label>Twitter <input class="social" type="checkbox" value="twitter"></label>
+						<label>Blog	<input class="social" type="checkbox" value="blog"></label>
+						<label>YouTube <input class="social" type="checkbox" value="youtube"></label>
+					</div>
+				</div>	
+
+				<div id="presupuesto">
+					<h2>Genera tu presupuesto</h2>
+
+					<div>
+						<label>Incluir IVA <input id="iva" type="checkbox"></label>
+					</div>
+
+					<label>Fecha Inicio</label>
+					<div>
+						<input id="fecha_inicio" type="date" required>
+					</div>
+
+					<label>Fecha Fin</label>
+					<div>
+						<input id="fecha_fin" type="date" required>
+					</div>
+
+					<label>Horas Diarias</label>
+					<div>
+						<input id="horas" type="number" min="1" max="24" required>
+					</div>
+
+					<div>
+						<input type="submit" value="Generar">
+					</div>
+
+					<table>
+						<tr>
+							<td>Subtotal</td>
+							<td id="monto_subtotal">Bs. 1000</td>
+						</tr>
+						<tr>
+							<td>IVA (12%)</td>
+							<td id="monto_iva">Bs. 120</td>
+						</tr>
+						<tr>
+							<td>Total</td>
+							<td id="monto_total">Bs. 1120</td>
+						</tr>
+						<tr>
+							<td>Honorarios</td>
+							<td id="monto_honorarios">500 Bs. / Hora</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
